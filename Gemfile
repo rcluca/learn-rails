@@ -50,3 +50,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'thor', '0.19.1'
 gem 'figaro'
+
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
+  gem 'thin'
+end
